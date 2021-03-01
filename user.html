@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Users</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      </head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="dashboard.html">Welcome User1</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>  
+        </nav>
+
+
+<!-- divider -->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="user.html">Users Profile</a></li>
+            </ol>
+        </nav>
+<br>
+
+<!-- user container -->
+       <div class="container">
+        <div class="card">
+            <h5 class="card-header">Hello, John Doe</h5>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="img/baby1.webp" width="50%" height="100%" alt="" style="border-radius: 25px;">
+                    </div>
+                    <div class="col-sm-8">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text"><a href="#">johndoe@gmail.com</a> - Administrator</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="container">
+                    <h3>Account</h3>
+                    
+                    <form class="row g-3">
+                        <!-- <div class="row g-3">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                          </div> -->
+                          <div class="col-md-6">
+                            <label for="firstname" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="lastname" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="">
+                          </div>
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="title" class="form-label">Title</label>
+                          <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="language" class="form-label">Language</label>
+                            <input type="text" class="form-control" id="">
+                          </div>
+                        <div class="col-12" style="padding: 20px;">
+                          <a href="#"><button type="submit" class="btn btn-success">Save</button></a>
+                        </div>
+                      </form>
+                </div>
+            </div>
+          </div>
+       </div>
+</body>
+</html>

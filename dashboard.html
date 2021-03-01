@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/05f4ef99a2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/05f4ef99a2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <h3 style="text-align: center;"><i class="fas fa-user-lock fa-3x"></i></h3>
+  <ul>
+        
+    <li><a href="dashboard.html"><i class="fas fa-home"></i>HOME</a></li>
+    <li><a href="user.html"><i class="fas fa-users"></i>MANAGE USERS</a></li>
+    <li><a href="upload.html"><i class="fas fa-cog"></i>UPLOAD PRODUCTS</a></li>
+    <li><a href="manageproducts.html"><i class="fas fa-tools"></i>MANAGE PRODUCTS</a></li>
+    <li><a href="message.html"><i class="fas fa-comments-dollar"></i>MESSAGES</a></li>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-">
+        <button class="btn btn-outline-primary me-md-2" type="button">Log Out</button>
+        <button class="btn btn-outline-secondary" type="button">Register</button>
+      </div>
+</ul>
+</div>
+
+<div id="main">
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark" color-on-scroll="500">
+        <div class="container-fluid">
+            <nav class="openbtn" onclick="openNav()">☰ Welcome Admin</button>
+        </div>  
+        </nav>
+<br>
+     <div class="container-fluid">
+        <h3 style="font-weight: bold;">DASHBOARD</h3>
+     </div>
+<br>
+<hr>
+<!-- others -->
+
+<div class="container">
+    <h4 style="font-weight: bold;">Overview</h4>
+    <br>
+    <div class="row">
+        <div class="col-lg-3">
+         <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+             <div class="card-header"><i class="fas fa-tag"></i></div>
+             <div class="card-body">
+               <h5 class="card-title">Overall Sell</h5>
+               <p class="card-text" style="font-size: 25px; font-weight: bold;">1280</p>
+             </div>
+           </div>
+        </div>
+        
+        <div class="col-lg-3">
+            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header"><i class="fas fa-user-check"></i></div>
+                <div class="card-body">
+                  <h5 class="card-title">Overall Visits</h5>
+                  <p class="card-text" style="font-size: 25px; font-weight: bold;">1280</p>
+                </div>
+              </div>
+     </div>
+
+     <div class="col-lg-3">
+           <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+  <div class="card-header"><i class="fas fa-signal"></i></div>
+  <div class="card-body">
+    <h5 class="card-title">Overall Growth</h5>
+    <p class="card-text" style="font-size: 25px; font-weight: bold;">70%</p>
+  </div>
+</div> 
+     </div>
+
+     <div class="col-lg-3">
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+<div class="card-header"><i class="fas fa-chart-line"></i></div>
+<div class="card-body">
+ <h5 class="card-title">Test Graph</h5>
+ <p class="card-text" style="font-size: 25px; font-weight: bold;">70%</p>
+</div>
+</div> 
+  </div>
+
+    </div>
+</div>
+
+<br>
+<hr>
+
+<!-- others2 -->
+<div class="container">
+    <h4 style="font-weight: bold;">Secondary</h4>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="container">
+                <div class="row row-cols-2">
+
+                    <div class="col" style="padding: 3px;">
+                        <div class="card" style="padding: 5px; border-radius:10px; align-items:center">
+                            <div class="card-body">
+                                <i class="fas fa-users fa-2x" style="color: green;"></i>
+                                <a href="" style="text-decoration: none;"><h6 style="color: green;">Affiliate</h6></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="padding: 3px;">
+                        <div class="card" style="padding: 5px; border-radius:10px; align-items:center">
+                            <div class="card-body">
+                                <i class="fas fa-box fa-2x" style="color: rgb(172, 172, 22);"></i>
+                                <h6 style="color: rgb(172, 172, 22);;">Product</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="padding: 3px;">
+                        <div class="card" style="padding: 5px; border-radius:10px; align-items:center">
+                            <div class="card-body">
+                                <i class="fas fa-random fa-2x" style="color: cyan;"></i>
+                                <h6 style="color: cyan;">Transfer</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="padding: 3px;">
+                        <div class="card" style="padding: 5px; border-radius:10px; align-items:center">
+                            <div class="card-body">
+                                <i class="fas fa-chart-line fa-2x" style="color: green;"></i>
+                                <h6 style="color: green;">Payment</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="padding: 3px;">
+                        <div class="card" style="padding: 5px; border-radius:10px; align-items:center">
+                            <div class="card-body">
+                                <i class="fas fa-credit-card fa-2x" style="color: blue;"></i>
+                                <h6 style="color: blue;">Transaction</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="padding: 3px;">
+                        <div class="card" style="padding: 5px; border-radius:10px; align-items:center">
+                            <div class="card-body" style="border-radius: 10px;">
+                                <i class="fas fa-piggy-bank fa-2x" style="color: green;"></i>
+                                    <h6 style="color: green;">Wallet</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h4 class="mb-1" style="font-weight: bold;">User Activity</h4>
+                  </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">User 1</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1">Ordered 2 items</p>
+                  <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">User 2</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1">Ordered 3 items</p>
+                  <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">User 3</h5>
+                      <small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Ordered 3 items</p>
+                    <small class="text-muted">Donec id elit non mi porta.</small>
+                  </a>
+
+              </div>
+        </div>
+
+    </div>
+</div>
+<br>
+<hr>
+<!-- other 3 -->
+<div class="container">
+    <h4 style="font-weight: bold;">Quick Links</h4>
+            <div class="container overflow-hidden">
+                <div class="row gy-5">
+                    
+                <div class="col-6">
+                    <a href="upload.html" style="text-decoration: none; color: black;">    
+                    <div class="p-3 border bg-light">
+                        <h3 style="text-align: center;"><i class="fas fa-cog" style="color: yellow;"></i></h3>
+                        <p style="text-align: center;">UPLOAD PRODUCTS</p>
+                    </div>
+                </a>
+                </div>
+
+                  <div class="col-6"> 
+                    <a href="manageproducts.html" style="text-decoration: none; color: black;">     
+                    <div class="p-3 border bg-light">
+                        <h3 style="text-align: center;"><i class="fas fa-tools" style="color: green;"></i></h3>
+                        <p style="text-align: center;">MANAGE PRODUCTS</p>
+                    </div>
+                    </a>
+                  </div>
+
+                  <div class="col-6">
+                    <a href="user.html" style="text-decoration: none; color: black;">     
+                    <div class="p-3 border bg-light">
+                        <h3 style="text-align: center;"><i class="fas fa-user" style="color: red;"></i></h3>
+                        <p style="text-align: center;">MANAGE USERS</p>
+                    </div>
+                    </a>
+                  </div>
+
+                  <div class="col-6">   
+                    <a href="message.html" style="text-decoration: none; color: black;">  
+                    <div class="p-3 border bg-gray">
+                        <h3 style="text-align: center;"><i class="fas fa-comments-dollar" style="color: purple;"></i></h3>
+                        <p style="text-align: center;">MANAGE MESSAGES</p>
+                    </div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+</div>
+
+
+
+
+
+
+       
+<!-- icons -->
+        <div class="container" style="padding: 20px;">
+            <div class="row row-cols-5">
+            <div class="col"><i class="fas fa-file-alt fa-2x" style="color: purple;"></i></div>
+            <div class="col"><i class="fas fa-download fa-2x" style="color: red;"></i></div>
+            <div class="col"><i class="fas fa-print fa-2x" style="color: darkgreen;"></i></div>
+            <div class="col"><i class="fas fa-cog fa-2x" style="color: yellow;"></i></div>
+            <div class="col"><p>Today: <span style="color: blue">Jan 7</span></p></div>
+            </div>
+        </div>
+            
+
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "350px";
+  document.getElementById("main").style.marginLeft = "350px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html>
